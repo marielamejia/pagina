@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            font-family: Merriweather;
+            background-color: #3d348b;
+            position: relative;
+        }
+
+        .header {
+            background-color: #3d348b;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .content {
+            margin: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            font-family: Merriweather;
+            font-size: 16px;
+            margin: 10px 2px;
+            transition: background-color 0.3s;
+            border-radius: 25px;
+        }
+
+            .btn:hover {
+                background-color: #f7b801;
+            }
+
+        .btn2 {
+            background-color: #f7b801;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            font-family: Merriweather;
+            font-size: 16px;
+            margin: 10px 2px;
+            transition: background-color 0.3s;
+            border-radius: 25px;
+        }
+
+            .btn2:hover {
+                background-color: #f7b801;
+            }
+
+        .center-button {
+            display: block;
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        .center-button2 {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .header h3 {
+            margin: 0;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h5 {
+            margin: 0;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .input_placeholder::placeholder {
+            color: black;
+            text-align: center;
+            font-family: Merriweather;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            .checkbox.checked {
+                background-color: blue;
+            }
+
+        .label {
+            color: black;
+            cursor: pointer;
+        }
+
+        .anchor-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3d348b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0px;
+            cursor: pointer;
+            align-items: left;
+            font-size: 30px;
+        }
+
+            .anchor-button:hover {
+                background-color: #3d348b;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #7678ed;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f7b801
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #f7b801;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" text-align="right;" class="anchor-button" onclick="redirectToNewPage()"><strong>Lat Am Links</strong></a>
+        <script>
+            function redirectToNewPage() {
+                onclick = location.href = 'PaginaPrincipal.html';
+            }
+        </script>
+        <h2>Unlocking opportunities </h2>
+        <br /> <br />
+        <h3>Embrace growth: partner with LatAmLinks</h3>
+        <br />
+        <h5>Expand Your Global Footprint with International Business Opportunities</h5> <br />
+        <h5>
+            We at LatAmLinks are expanding our network of partners and invite your company to collaborate <br />
+            with us in our journey of simplifying business development across Mexico and Latin America. <br />
+            As a partner, you will play a pivotal role in providing comprehensive solutions to companies aiming <br />
+            to establish or expand their presence in these markets.
+        </h5>
+        <br /> <br />
+        <h5>What We Expect from Our Partners:</h5> <br />
+        <h5>
+            Reputation: A proven track record of excellence and ethical business practices. <br />
+            Reliability: Consistent and dependable services that our clients can trust. <br />
+            Simplicity: User-friendly approaches that make business processes efficient and accessible.<br />
+            Experience: Extensive knowledge and expertise in your respective field, contributing to the overall value <br />
+            offered to our clients.
+        </h5>
+        <br /> <br />
+        <h5>
+            By joining our network, you'll be part of a unique group of companies dedicated to fostering growth and
+            development in Latin America and Mexico.
+        </h5> <br /> <br />
+        <h5>First name</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Last name</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Company's name</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Position</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Industry</h5>
+        <div class="dropdown">
+            <button class="dropbtn">Select industry</button>
+            <div class="dropdown-content">
+                <a href="#">Consumer industry</a>
+                <a href="#">Entertainment industry</a>
+                <a href="#">Pharmaceutical industry</a>
+                <a href="#">Automotive industry</a>
+                <a href="#">Hospitality industry</a>
+                <a href="#">Infrastructure industry</a>
+                <a href="#">Telecomm industry</a>
+                <a href="#">Retail industry</a>
+                <a href="#">E-commerce industry</a>
+                <a href="#">Natural resources industry</a>
+                <a href="#">Manufacturing Industry</a>
+                <a href="#">Financial services Industry</a>
+                <a href="#">Service industry</a>
+                <a href="#">Diversisfied industry</a>
+                <a href="#">Specialized Industry</a>
+                <a href="#">Other</a>
+
+            </div>
+        </div>
+        <h5>Email</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Phone</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <h5>Company's message (optional)</h5>
+        <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+            <input type="text" id="input_textbox" name="input_textbox" placeholder="" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 350px; height: 20px; background-color: #f7b801">
+        </div>
+        <button class="btn center-button" onclick="location.href='applicationPartners.html'" style="margin-top: 20px;">Submit application</button>
+
+    </div>
+
+</body>
+</html>

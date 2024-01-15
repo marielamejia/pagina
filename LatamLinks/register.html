@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LatAm Links</title>
+<style>
+    body {
+        font-family: Merriweather;
+        background-color: #3d348b;
+        position: relative;
+    }
+
+    .header {
+        background-color: #3d348b;
+        color: white;
+        text-align: left;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .content {
+        margin: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .btn {
+        background-color: #ffffff;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        font-family: Merriweather;
+        font-size: 16px;
+        margin: 10px 2px;
+        transition: background-color 0.3s;
+        border-radius: 25px;
+    }
+
+        .btn:hover {
+            background-color: #f7b801;
+        }
+
+    .btn2 {
+        background-color: #f7b801;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        display: inline-block;
+        font-family: Merriweather;
+        font-size: 16px;
+        margin: 10px 2px;
+        transition: background-color 0.3s;
+        border-radius: 25px;
+    }
+
+        .btn2:hover {
+            background-color: #f7b801;
+        }
+
+    .center-button {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    .center-button2 {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    .header h2 {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .header h3 {
+        margin: 0;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header h4 {
+        margin: 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header h5 {
+        margin: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .input_placeholder::placeholder {
+        color: black;
+        text-align: center;
+        font-family: Merriweather;
+    }
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border: 2px solid black;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+        .checkbox.checked {
+            background-color: blue;
+        }
+
+    .label {
+        color: black;
+        cursor: pointer;
+    }
+
+    .form-container {
+        background-color: #3d348b;
+        border: 4px solid white;
+        padding: 20px;
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+     .anchor-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3d348b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0px;
+            cursor: pointer;
+            align-items: left;
+            font-size: 30px;
+        }
+
+            .anchor-button:hover {
+                background-color: #3d348b;
+            }
+</style>
+
+<script>
+        function handleCheckboxClick(event) {
+            const checkbox = event.target;
+            checkbox.classList.toggle('checked');
+        }
+</script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#" text-align="right;" class="anchor-button" onclick="redirectToNewPage()"><strong>Lat Am Links</strong></a>
+        <script>
+            function redirectToNewPage() {
+                onclick = location.href = 'PaginaPrincipal.html';
+            }
+        </script>
+        <h2>Unlocking opportunities </h2>
+        <br /> <br /> <br /> <br />
+        <div class="form-container">
+            <h3>Welcome!</h3>
+            <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                <input type="text" id="input_textbox" name="input_textbox" placeholder="Email" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 200px; height: 20px; background-color: #f7b801">
+            </div>
+            <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                <input type="text" id="input_textbox" name="input_textbox" placeholder="Password" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 200px; height: 20px; background-color: #f7b801">
+            </div>
+            <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                <input type="checkbox" id="myCheckbox" name="myCheckbox">
+                <label for="myCheckbox">Accept terms and conditions</label>
+            </div>
+            <button class="btn center-button2" onclick="location.href='emailConfirm.html'">Register</button>
+            <br />
+        </div>
+
+    </div>
+    <div class="content">
+        <button class="btn" onclick="location.href='contact.html'">Contact</button>
+        <button class="btn" onclick="location.href='login.html'">Login</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatAm Links</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: Merriweather;
+            background-color: #3d348b;
+            position: relative;
+        }
+
+        .header {
+            background-color: #3d348b;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .content {
+            margin: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .btn {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            font-family: Merriweather;
+            font-size: 16px;
+            margin: 10px 2px;
+            transition: background-color 0.3s;
+            border-radius: 25px;
+        }
+
+            .btn:hover {
+                background-color: #f7b801;
+            }
+
+        .btn2 {
+            background-color: #f7b801;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            font-family: Merriweather;
+            font-size: 16px;
+            margin: 10px 2px;
+            transition: background-color 0.3s;
+            border-radius: 25px;
+        }
+
+            .btn2:hover {
+                background-color: #f7b801;
+            }
+
+        .center-button {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+        }
+
+        .center-button2 {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+        }
+
+        .center-button3 {
+            display: block;
+            margin: 0 auto;
+            width: 350px;
+            height: 50px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .header h3 {
+            margin: 0;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 35px;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .header h5 {
+            margin: 0;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .input_placeholder::placeholder {
+            color: black;
+            text-align: center;
+            font-family: Merriweather;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 2px solid black;
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            .checkbox.checked {
+                background-color: blue;
+            }
+
+        .label {
+            color: black;
+            cursor: pointer;
+        }
+
+        .form-container {
+            display: inline-block;
+            background-color: #3d348b;
+            border: 4px solid white;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .form-container2 {
+            display: inline-block;
+            background-color: #3d348b;
+            border: 4px solid white;
+            padding: 20px;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 20px;
+            align-items: right;
+        }
+
+        .imgRedonda {
+            width: 400px;
+            height: 400px;
+            border-radius: 150px;
+            border: 5px dashed white;
+            border: 5px dotted #f18701;
+        }
+
+        .box {
+            border-radius: 10px;
+        }
+
+        .anchor-button {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3d348b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0px;
+            cursor: pointer;
+            align-items: left;
+            font-size: 30px;
+        }
+
+            .anchor-button:hover {
+                background-color: #3d348b;
+            }
+
+        .anchor-button2 {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #3d348b;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 0px;
+            cursor: pointer;
+            align-items: right;
+        }
+
+            .anchor-button2:hover {
+                background-color: #3d348b;
+            }
+
+        .button {
+            position: relative;
+            padding-right: 5px; /* ajuste este valor según el tamaño de su imagen */
+        }
+
+        .right-aligned-image {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    </style>
+
+    <script>
+        function handleCheckboxClick(event) {
+            const checkbox = event.target;
+            checkbox.classList.toggle('checked');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#" text-align="right;" class="anchor-button" onclick="redirectToNewPage()"><strong>Lat Am Links</strong></a>
+        <script>
+            function redirectToNewPage() {
+                onclick = location.href = 'PaginaPrincipal.html';
+            }
+        </script>
+        <h2>Unlocking opportunities </h2>
+        <br /> <br />
+        <div class="form-container">
+            <h3>Welcome!</h3>
+            <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                <input type="text" id="input_textbox" name="input_textbox" placeholder="Email" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 200px; height: 20px; background-color: #f7b801">
+            </div>
+            <div style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                <input type="text" id="input_textbox" name="input_textbox" placeholder="Password" class="input_placeholder" style="border: 1px solid #000; padding: 10px; border-radius: 10px; width: 200px; height: 20px; background-color: #f7b801">
+            </div>
+
+            <a href="#" text-align="right;" class="anchor-button2" onclick="redirectToNewPage()">Forgot your password?</a>
+            /* ARREGLAR ESTO */
+            <script>
+                function redirectToNewPage() {
+                    window.location.href = "https://www.example.com/new-page";
+                }
+            </script>
+            <br /> <br />
+            <button class="btn center-button2" onclick="location.href='{% url 'registerbt' %}'">Register</button>
+            <br />
+        </div>
+        <br /> <br /> <br />
+        <p><center>------------------------------------------------------------------------------------------------------------------------------------ or ------------------------------------------------------------------------------------------------------------------------------------</center></p>
+        <br />
+        <button class="btn center-button3" onclick="location.href='{% url 'continueGoogle' %}'">
+            Continue with Google
+            <img src="{% static 'googleLogo.png' %}" alt="Google logo" class="right-aligned-image">
+        </button>
+        <br />
+        <button class="btn center-button3" onclick="location.href='{% url 'continueFb' %}'">Continue with Facebook<img src="{% static 'facebookLogo.png' %}" alt="Facebook logo" class="right-aligned-image"></button>
+        <br />
+        <p><center> Don't have an account? <a href="#" text-align="right;" class="anchor-button2" onclick="redirectToNewPage2()">Register </a></center></p>
+        <script>
+            function redirectToNewPage2() {
+                window.location.href = "https://www.example.com/new-page";
+            }
+        </script>
+    </div>
+
+    <div class="content">
+        <button class="btn" onclick="location.href='contact.html'">Contact</button>
+        <button class="btn2" onclick="location.href='login.html'">Login</button>
+    </div>
+
+</body>
+</html>
